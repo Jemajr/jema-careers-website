@@ -1,0 +1,37 @@
+<h4 class="mb-3">Application Form</h4>
+<form action="/job/{{job.id}}/apply" method="post">
+  
+  <div class="form-floating mb-3">
+    <input type="text" name="name" class="form-control" required>
+    <label>Full Name</label><br>
+  </div>
+
+  <div class="form-floating mb-3">
+    <input type="text" name="email" class="form-control" required>
+    <label>Email</label><br>
+  </div>
+
+  <div class="form-floating mb-3">
+    <input type="text" name="linkedin_url" class="form-control" required>
+    <label>LinkedIn URL</label><br>
+  </div>
+
+  <div class="form-floating mb-3">
+    <textarea name="education" class="form-control" required></textarea>
+    <label>Education</label><br>
+  </div>
+
+  <div class="form-floating mb-3">
+    <textarea name="work_experience" class="form-control" required></textarea>
+    <label>Work Experience</label><br>
+  </div>
+
+  <div class="form-floating mb-3">
+    <input type="text" name="resume_url" class="form-control" required>
+    <label>Resume URL</label><br>
+  </div>
+  
+  <div>
+    <input type="submit" class="btn btn-primary">
+  </div>
+</form>

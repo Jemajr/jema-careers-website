@@ -8,11 +8,9 @@
   {% include 'nav.html' %}
   {% include 'banner.html' %}
   <div class="container" style="max-width: 820px; margin: 0 auto;">
-    <h1 class="text-center mt-4 mb-4">Jovian Careers</h1>
+    <h1 class="text-center mt-4 mb-4">Jema Careers</h1>
     <h3>{{job['title']}}</h3>
     <p class="lead">{{job.location}}</p>
-    <h4>Salary</h4>
-    <p>{{job.currency}}{{"{:,}".format(job.salary)}}</p>
     <h4>Responsibilities</h4>
     <ul>
       {% for line in job.responsibilities.split("\n") %}
@@ -25,8 +23,10 @@
         <li>{{line}}</li>
       {% endfor %}
     </ul>
+    <h4>Salary</h4>
+    <p>{{job.currency}}{{"{:,}".format(job.salary)}}</p>
+    {% include 'application_form.html' %}
     <div class="text-center">
-      <a href="mailto:hello@jovian.ai?subject=Application%20for%20{{job['title']}}%20Role&body=Name%3A%20%3Cyour%20name%3E%0D%0A%0D%0AResume%3A%20%3Clink%20to%20your%20resume%3E%0D%0A%0D%0ALinkedIn%3A%20%3Clink%20to%20your%20LinkedIn%20profile%3E%0D%0A%0D%0A" class="btn btn-primary btn-lg">Apply</a>
     </div>
   </div>
   {% include 'footer.html' %}

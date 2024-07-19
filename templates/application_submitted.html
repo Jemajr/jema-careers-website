@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   {% include 'bootstrap.html' %}
+  <title>Application Submitted</title>
+</head>
+<body>
+  {% include 'nav.html' %}
+  {% include 'banner.html' %}
+  <div class="container" style="max-width: 820px; margin: 0 auto;">
+    <h1 class="text-center mt-4 mb-4">Jema Careers</h1>
+    <p>Hello <b>{{application.name}}!</b></p>
+    <p>We're delighted to confirm that your application for the role of <b>{{job.title}}</b> has been successfully submitted. Our team will review your application, and we appreciate the time you took to apply. We will carefully consider your qualifications and will get back to you if we require any additional information or would like to schedule an interview. Thanks for applying!</p>
+  </div>
+  {% include 'footer.html' %}
+</body>
+</html>

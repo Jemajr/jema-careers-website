@@ -1,7 +1,9 @@
 from flask import Flask, render_template, jsonify
+from main import get_jobs
 
 app = Flask(__name__, static_folder='static')
 
+'''
 JOBS = [
   {
   'id': 1,
@@ -34,14 +36,19 @@ JOBS = [
   'salary': '$110,000'
   }
 ]
+'''
+
+
 
 @app.route("/")
 def hello_world():
+  JOBS = get_jobs()
   return render_template('home.html',
                         jobs = JOBS)
 
 @app.route("/api/jobs")
 def list_jobs():
+  JOBS = get_jobs()
   return jsonify(JOBS)
 
 if __name__ == "__main__":

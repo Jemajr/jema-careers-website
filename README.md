@@ -1,2 +1,2 @@
-# jovian-careers-website
-A careers website for Jovian
+# jema-careers-website
+A careers website for Jema

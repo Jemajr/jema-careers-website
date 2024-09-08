@@ -3,6 +3,8 @@
 ## Overview
 Jema Careers is a full-stack careers website designed to manage job applications. The project leverages Flask for the backend and MySQL for database management, with a user-friendly interface built using HTML, CSS, and JavaScript.
 
+![Demo](https://github.com/Jemajr/jema-careers-website/blob/main/images/demo.gif "Demo")
+
 ## Features
 - **Backend:** Developed using Flask, a lightweight Python web framework.
 - **Database:** Managed job applications using MySQL for robust data storage and management.
